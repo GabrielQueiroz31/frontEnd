@@ -1,77 +1,76 @@
+/* folha de estilização para o html  */
 
-* {
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f1f1;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
 }
 
-body {
-    background-color: #f4f4f9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.container {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-}
-
-h1 {
+h1{
     text-align: center;
-    color: #333;
-    margin-bottom: 1.5rem;
 }
 
-.input-group {
+.form-area{
     display: flex;
     gap: 10px;
-    margin-bottom: 1.5rem;
+    font-size: 20px;
 }
 
-input[type="text"] {
+input{
     flex: 1;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    outline: none;
+    font-size: 20px;
+    border-radius: 6px;
 }
 
-input[type="text"]:focus {
-    border-color: #007bff;
-}
-
-button#add-btn {
-    padding: 10px 15px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
+button{
+    padding: 10px 16px;
     cursor: pointer;
-    transition: background 0.3s;
+    border: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 5px;
 }
 
-button#add-btn:hover {
-    background-color: #218838;
+button:hover{
+    background: blue;
 }
 
-ul {
+ul{
     list-style: none;
+    padding: 0;
 }
 
-li {
-    background: #f9f9f9;
-    margin-bottom: 8px;
-    padding: 10px;
+li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #eee;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+li.completed span{
+    text-decoration: line-through;
+}
+
+.action{
+    display: flex;
+    gap: 8px;
+}
+
+#mensagem{
+    color: red;
+    min-height: 20px;
 }
